@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="pro07-javaweb-begin:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/pro07_javaweb_begin_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="pro07-javaweb-begin/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="pro07-javaweb-begin" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
