@@ -1,8 +1,9 @@
 package com.edu.mhl.service;
 
 import com.edu.mhl.dao.BillDAO;
-import com.edu.mhl.domain.DiningTable;
+import com.edu.mhl.domain.Bill;
 
+import java.util.List;
 import java.util.UUID;
 
 public class BillService {
@@ -27,5 +28,33 @@ public class BillService {
         if (update <= 0) return false;
         //需要更新对应餐桌的状态
         return diningTableService.updateDiningTableState(diningTableId, "就餐中");
+    }
+
+    //返回所有的账单，提供给View使用
+    public List<Bill> list() {
+        return  billDAO.queryMulti("select * from bill", Bill.class);
+    }
+
+    //查看某个餐桌是否有未结账的账单
+    public boolean hasPayBillByDiningTableId(int diningTableId) {
+        Bill bill = billDAO.querySingle("SELECT * from bill WHERE diningTableId = ? AND state = '未结账' LIMIT 0,1", Bill.class, diningTableId);
+        return bill != null;
+    }
+
+    //完成结账[如果餐桌存在，并且该餐桌有未结账的账单]
+    //如果成功返回true，失败返回false
+    public boolean payBill(int diningTableId, String payMode) {
+        //如果在这里使用事务的话，需要使用ThreadLocal来解决，框架中比如mybatis提供了事务支持
+        //1.修改bill表
+        int update = billDAO.update("update bill set state = ? where diningTableId = ? and state = '未结账'", payMode, diningTableId);
+        if (update <= 0) {//如果更新没有成功，则表示失败...
+            return false;
+        }
+        //2.修改DiningTable表格
+        //注意：不要直接在这里操作，而应该调用DiningTableService方法
+        if (!diningTableService.updateDiningTableToFree(diningTableId, "空")) {
+            return false;
+        }
+        return true;
     }
 }
