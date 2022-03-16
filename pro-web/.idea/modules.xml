@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/pro08-javaweb-servlet/pro08-javaweb-servlet.iml" filepath="$PROJECT_DIR$/pro08-javaweb-servlet/pro08-javaweb-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/pro09-fruit1.4-thymel/pro09-fruit1.4-thymel.iml" filepath="$PROJECT_DIR$/pro09-fruit1.4-thymel/pro09-fruit1.4-thymel.iml" />
       <module fileurl="file://$PROJECT_DIR$/pro10-fruit1.5-thymel/pro10-fruit1.5-thymel.iml" filepath="$PROJECT_DIR$/pro10-fruit1.5-thymel/pro10-fruit1.5-thymel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro11-fruit1.6-thymel/pro11-fruit1.6-thymel.iml" filepath="$PROJECT_DIR$/pro11-fruit1.6-thymel/pro11-fruit1.6-thymel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro12-fruit1.7-thymel/pro12-fruit1.7-thymel.iml" filepath="$PROJECT_DIR$/pro12-fruit1.7-thymel/pro12-fruit1.7-thymel.iml" />
     </modules>
   </component>
 </project>
