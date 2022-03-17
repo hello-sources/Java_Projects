@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans>
+    <!--这个Bean标签是将来servletPath中涉及的名字对应是fruit，那么就要FruitController来处理-->
+    <bean id="fruit" class="com.atguigu.fruit.controllers.FruitController"/>
+</beans>
+
+
+
+<!--
+1.概念
+    HTML：超文本标记语言
+    XML：可扩展标记语言
+    HTML是XML中的一个子集
+
+2.XML包含三部分
+    1) XML声明，而且声明这一行必须在XML文档的第一行
+    2) DTD 文档类型定义
+    3) XML正文
+-->
