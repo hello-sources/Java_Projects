@@ -11,4 +11,7 @@
         <filter-name>Demo01Filter</filter-name>
         <url-pattern>/demo01.do</url-pattern>
     </filter-mapping>-->
+    <listener>
+        <listener-class>com.atguigu.listener.MyServletContextListener</listener-class>
+    </listener>
 </web-app>

@@ -8,11 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class BaseDAO<T> {
-    public final String DRIVER = "com.mysql.jdbc.Driver" ;
-    public final String URL = "jdbc:mysql://localhost:3306/fruitdb?useUnicode=true&characterEncoding=utf-8&useSSL=false";
-    public final String USER = "root";
-    public final String PWD = "123456" ;
-
     protected Connection conn ;
     protected PreparedStatement psmt ;
     protected ResultSet rs ;
@@ -20,7 +15,7 @@ public abstract class BaseDAO<T> {
     //T的Class对象
     private Class entityClass ;
 
-    public BaseDAO(){
+    public BaseDAO()  {
         //getClass() 获取Class对象，当前我们执行的是new FruitDAOImpl() , 创建的是FruitDAOImpl的实例
         //那么子类构造方法内部首先会调用父类（BaseDAO）的无参构造方法
         //因此此处的getClass()会被执行，但是getClass获取的是FruitDAOImpl的Class
@@ -34,35 +29,16 @@ public abstract class BaseDAO<T> {
             entityClass = Class.forName(actualType.getTypeName());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            throw new DAOException("BaseDAO构造方法出错了，可能的原因是没有指定<>中的内容");
         }
     }
 
     protected Connection getConn(){
-        try {
-            //1.加载驱动
-            Class.forName(DRIVER);
-            //2.通过驱动管理器获取连接对象
-            return DriverManager.getConnection(URL, USER, PWD);
-        } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
-        }
-        return null ;
+        return ConnUtil.getConn();
     }
 
     protected void close(ResultSet rs , PreparedStatement psmt , Connection conn){
-        try {
-            if (rs != null) {
-                rs.close();
-            }
-            if(psmt!=null){
-                psmt.close();
-            }
-            if(conn!=null && !conn.isClosed()){
-                conn.close();
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
     }
 
     //给预处理命令对象设置参数
@@ -75,11 +51,11 @@ public abstract class BaseDAO<T> {
     }
 
     //执行更新，返回影响行数
-    protected int executeUpdate(String sql , Object... params){
+    protected int executeUpdate(String sql , Object... params) {
         boolean insertFlag = false ;
         insertFlag = sql.trim().toUpperCase().startsWith("INSERT");
+        conn = getConn();
         try {
-            conn = getConn();
             if(insertFlag){
                 psmt = conn.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
             }else {
@@ -94,34 +70,28 @@ public abstract class BaseDAO<T> {
                     return ((Long)rs.getLong(1)).intValue();
                 }
             }
-            return count ;
+            return 0;
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
-            close(rs,psmt,conn);
+            throw new DAOException("BaseDAO executeUpdate出错了");
         }
-        return 0;
     }
 
     //通过反射技术给obj对象的property属性赋propertyValue值
-    private void setValue(Object obj ,  String property , Object propertyValue){
+    private void setValue(Object obj ,  String property , Object propertyValue) throws NoSuchFieldException, IllegalAccessException {
         Class clazz = obj.getClass();
-        try {
-            //获取property这个字符串对应的属性名 ， 比如 "fid"  去找 obj对象中的 fid 属性
-            Field field = clazz.getDeclaredField(property);
-            if(field!=null){
-                field.setAccessible(true);
-                field.set(obj,propertyValue);
-            }
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            e.printStackTrace();
+        //获取property这个字符串对应的属性名 ， 比如 "fid"  去找 obj对象中的 fid 属性
+        Field field = clazz.getDeclaredField(property);
+        if(field!=null){
+            field.setAccessible(true);
+            field.set(obj,propertyValue);
         }
     }
 
     //执行复杂查询，返回例如统计结果
-    protected Object[] executeComplexQuery(String sql , Object... params){
+    protected Object[] executeComplexQuery(String sql , Object... params) {
+        conn = getConn() ;
         try {
-            conn = getConn() ;
             psmt = conn.prepareStatement(sql);
             setParams(psmt,params);
             rs = psmt.executeQuery();
@@ -143,14 +113,13 @@ public abstract class BaseDAO<T> {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            close(rs,psmt,conn);
+            throw new DAOException("BaseDAO executeComplexQuery出错了");
         }
-        return null ;
+        return null;
     }
 
     //执行查询，返回单个实体对象
-    protected T load(String sql , Object... params){
+    protected T load(String sql , Object... params) {
         try {
             conn = getConn() ;
             psmt = conn.prepareStatement(sql);
@@ -174,54 +143,44 @@ public abstract class BaseDAO<T> {
                 }
                 return entity ;
             }
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } finally {
-            close(rs,psmt,conn);
+            throw new DAOException("BaseDAO load出错了");
         }
         return null ;
     }
 
 
     //执行查询，返回List
-    protected List<T> executeQuery(String sql , Object... params){
+    protected List<T> executeQuery(String sql , Object... params) {
         List<T> list = new ArrayList<>();
-        try {
-            conn = getConn() ;
-            psmt = conn.prepareStatement(sql);
-            setParams(psmt,params);
-            rs = psmt.executeQuery();
+        conn = getConn() ;
+       try{
+           psmt = conn.prepareStatement(sql);
+           setParams(psmt,params);
+           rs = psmt.executeQuery();
 
-            //通过rs可以获取结果集的元数据
-            //元数据：描述结果集数据的数据 , 简单讲，就是这个结果集有哪些列，什么类型等等
+           //通过rs可以获取结果集的元数据
+           //元数据：描述结果集数据的数据 , 简单讲，就是这个结果集有哪些列，什么类型等等
 
-            ResultSetMetaData rsmd = rs.getMetaData();
-            //获取结果集的列数
-            int columnCount = rsmd.getColumnCount();
-            //6.解析rs
-            while(rs.next()){
-                T entity = (T)entityClass.newInstance();
+           ResultSetMetaData rsmd = rs.getMetaData();
+           //获取结果集的列数
+           int columnCount = rsmd.getColumnCount();
+           //6.解析rs
+           while(rs.next()){
+               T entity = (T)entityClass.newInstance();
 
-                for(int i = 0 ; i<columnCount;i++){
-                    String columnName = rsmd.getColumnName(i+1);            //fid   fname   price
-                    Object columnValue = rs.getObject(i+1);     //33    苹果      5
-                    setValue(entity,columnName,columnValue);
-                }
-                list.add(entity);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } finally {
-            close(rs,psmt,conn);
-        }
+               for(int i = 0 ; i<columnCount;i++){
+                   String columnName = rsmd.getColumnName(i+1);            //fid   fname   price
+                   Object columnValue = rs.getObject(i+1);     //33    苹果      5
+                   setValue(entity,columnName,columnValue);
+               }
+               list.add(entity);
+           }
+       }catch (Exception e) {
+           e.printStackTrace();
+           throw new DAOException("BaseDAO executeQuery出错了");
+       }
         return list ;
     }
 }

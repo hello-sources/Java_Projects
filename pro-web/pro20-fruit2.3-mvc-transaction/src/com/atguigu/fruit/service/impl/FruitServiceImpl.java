@@ -3,6 +3,7 @@ package com.atguigu.fruit.service.impl;
 import com.atguigu.fruit.service.FruitService;
 import com.atguigu.fruit.dao.FruitDAO;
 import com.atguigu.fruit.pojo.Fruit;
+import com.atguigu.myssm.basedao.ConnUtil;
 
 import java.util.List;
 
@@ -11,12 +12,16 @@ public class FruitServiceImpl implements FruitService {
 
     @Override
     public List<Fruit> getFruitList(String keyword, Integer pageNo) {
+        System.out.println("getFruitList -> " + ConnUtil.getConn());
         return fruitDAO.getFruitList(keyword, pageNo);
     }
 
     @Override
     public void addFruit(Fruit fruit) {
         fruitDAO.addFruit(fruit);
+        Fruit fruit15 = fruitDAO.getFruitByFid(15);
+        fruit15.setFcount(99);
+        fruitDAO.updateFruit(fruit15);
     }
 
     @Override
@@ -31,6 +36,7 @@ public class FruitServiceImpl implements FruitService {
 
     @Override
     public Integer getPageCount(String keyword) {
+        System.out.println("getPageCount -> " + ConnUtil.getConn());
         int count = fruitDAO.getFruitCount(keyword);
         int pageCount = (count + 5 - 1) / 5;
         return pageCount;
