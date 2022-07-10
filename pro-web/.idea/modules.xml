@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaseServlet/BaseServlet.iml" filepath="$PROJECT_DIR$/BaseServlet/BaseServlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hello/Hello.iml" filepath="$PROJECT_DIR$/Hello/Hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/My_Servlet/My_Servlet.iml" filepath="$PROJECT_DIR$/My_Servlet/My_Servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Servlet_Learn/Servlet_Learn.iml" filepath="$PROJECT_DIR$/Servlet_Learn/Servlet_Learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/pro-web.iml" filepath="$PROJECT_DIR$/pro-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/pro07-javaweb-begin/pro07-javaweb-begin.iml" filepath="$PROJECT_DIR$/pro07-javaweb-begin/pro07-javaweb-begin.iml" />
       <module fileurl="file://$PROJECT_DIR$/pro08-javaweb-servlet/pro08-javaweb-servlet.iml" filepath="$PROJECT_DIR$/pro08-javaweb-servlet/pro08-javaweb-servlet.iml" />

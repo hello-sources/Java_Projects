@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d482d881-828c-4b46-a506-2e751c13ae2d" name="Default Changelist" comment="" />
+    <list default="true" id="d482d881-828c-4b46-a506-2e751c13ae2d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../mhl_project/out/production/mhl_project/com/edu/mhl/domain/MultiTableBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mhl_project/out/production/mhl_project/com/edu/mhl/domain/MultiTableBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,6 +227,8 @@
       <workItem from="1646824652015" duration="48000" />
       <workItem from="1646824714318" duration="43000" />
       <workItem from="1647091720887" duration="13000" />
+      <workItem from="1647312647549" duration="617000" />
+      <workItem from="1647313293647" duration="61000" />
     </task>
     <servers />
   </component>
@@ -323,9 +328,9 @@
       <screen x="0" y="0" width="1707" height="1019" />
     </state>
     <state x="669" y="101" key="SettingsEditor/0.0.1707.1019@0.0.1707.1019" timestamp="1646823465236" />
-    <state x="483" y="140" key="new project wizard" timestamp="1646824756867">
+    <state x="483" y="140" key="new project wizard" timestamp="1647313351194">
       <screen x="0" y="0" width="1707" height="1019" />
     </state>
-    <state x="483" y="140" key="new project wizard/0.0.1707.1019@0.0.1707.1019" timestamp="1646824756867" />
+    <state x="483" y="140" key="new project wizard/0.0.1707.1019@0.0.1707.1019" timestamp="1647313351194" />
   </component>
 </project>
