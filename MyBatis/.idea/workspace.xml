@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cab35f25-1f54-428b-9bb6-ef6cd0ab58ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MyBatis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_caches_mybatis_ehcache_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo1/MyBatis-demo1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo1/src/main/java/com/ict/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo1/src/main/java/com/ict/mybatis/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo1/src/main/resources/com/ict/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo1/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo1/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo1/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo1/src/test/java/com/ict/mybatis/test/MyBatisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo2/MyBatis-demo2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo2/src/main/java/com/ict/mybatis/mapper/ParameterMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo2/src/main/java/com/ict/mybatis/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo2/src/main/java/com/ict/mybatis/utils/SqlSessionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo2/src/main/resources/com/ict/mybatis/mapper/ParameterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo2/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo2/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo2/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo2/src/test/java/com/ict/mybatis/test/ParameterMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/MyBatis-demo3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/java/com/ict/mybatis/mapper/CacheMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/java/com/ict/mybatis/mapper/DeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/java/com/ict/mybatis/mapper/DynamicSQLMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/java/com/ict/mybatis/mapper/EmpMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/java/com/ict/mybatis/pojo/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/java/com/ict/mybatis/pojo/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/java/com/ict/mybatis/utils/SqlSessionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/resources/com/ict/mybatis/mapper/CacheMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/resources/com/ict/mybatis/mapper/DeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/resources/com/ict/mybatis/mapper/DynamicSQLMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/resources/com/ict/mybatis/mapper/EmpMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/test/java/com/ict/mybatis/test/CacheMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/test/java/com/ict/mybatis/test/DynamicSQLMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis-demo3/src/test/java/com/ict/mybatis/test/ResultMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis_MBG/MyBatis_MBG.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis_MBG/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis_MBG/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis_MBG/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis_MBG/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis_MBG/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis_MBG/src/test/java/com/ict/mybatis/test/MBGTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis_MBG/src/test/java/com/ict/mybatis/test/PageHelperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/SpringMVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/SpringMVC_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/springMVC_demo1_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/springMVC_demo1_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/springMVC_demo2_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/springMVC_demo2_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/springMVC_demo3_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/springMVC_demo3_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/springMVC_demo5_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/springMVC_demo5_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/springMVC_jsp_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/artifacts/springMVC_jsp_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_springframework_spring_aop_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_springframework_spring_beans_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_springframework_spring_context_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_springframework_spring_core_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_springframework_spring_expression_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_springframework_spring_web_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_12_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/SpringMVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo1/springMVC-demo1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo1/src/main/java/com/ict/mvc/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo1/src/main/resources/springMVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo1/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo1/src/main/webapp/WEB-INF/templates/target.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo2/springMVC-demo2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo2/src/main/java/com/ict/mvc/controller/RequestMappingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo2/src/main/java/com/ict/mvc/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo2/src/main/resources/springMVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo2/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo2/src/main/webapp/WEB-INF/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo3/springMVC-demo3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo3/src/main/java/com/ict/mvc/controller/ScopeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo3/src/main/java/com/ict/mvc/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo3/src/main/java/com/ict/mvc/controller/ViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo3/src/main/resources/springMVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo3/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo3/src/main/webapp/WEB-INF/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo3/src/main/webapp/WEB-INF/templates/test_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo5/springMVC-demo5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo5/src/main/java/com/ict/mvc/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo5/src/main/java/com/ict/mvc/interceptors/FirstInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo5/src/main/java/com/ict/mvc/interceptors/SecondInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo5/src/main/resources/springMVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo5/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo5/src/main/webapp/WEB-INF/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-demo5/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-jsp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-jsp/springMVC-jsp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-jsp/src/main/java/com/ict/mvc/controller/JspController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-jsp/src/main/resources/springMVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-jsp/src/main/webapp/WEB-INF/templates/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-jsp/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/springMVC-jsp/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Projects.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyBatis-demo1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MyBatis-demo1/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="mybatis-mapper" />
+        <option value="mybatis-config" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Programming-Software\IDEA-2019.3.5\Java_Projects\MyBatis\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="2BtJnVlnQ1iNyJFgAmzeLTt4Rjk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MyBatis_MBG/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming-Software\IDEA-2019.3.5\Java_Projects\MyBatis\MyBatis-demo3\src\main\resources" />
+      <recent name="D:\Programming-Software\IDEA-2019.3.5\Java_Projects\MyBatis\MyBatis-demo1\src\main\resources\com\ict\mybatis\xml" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming-Software\IDEA-2019.3.5\Java_Projects\MyBatis\MyBatis_MBG\src\main\resources" />
+      <recent name="D:\Programming-Software\IDEA-2019.3.5\Java_Projects\MyBatis\MyBatis-demo3\src\main\resources\com\ict\mybatis\mapper" />
+      <recent name="D:\Programming-Software\IDEA-2019.3.5\Java_Projects\MyBatis\MyBatis-demo3\src\main\resources" />
+      <recent name="D:\Programming-Software\IDEA-2019.3.5\Java_Projects\MyBatis\MyBatis-demo3\src\main\java\com\ict\mybatis" />
+      <recent name="D:\Programming-Software\IDEA-2019.3.5\Java_Projects\MyBatis\MyBatis-demo3\src\test\java\com\ict\mybatis\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PageHelperTest.testPageHelper">
+    <configuration name="CacheMapperTest.testOneCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis-demo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ict.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ict.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ict.mybatis.test.CacheMapperTest" />
+      <option name="METHOD_NAME" value="testOneCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CacheMapperTest.testTwoCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis-demo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ict.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ict.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ict.mybatis.test.CacheMapperTest" />
+      <option name="METHOD_NAME" value="testTwoCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicSQLMapperTest.testInsertMoreByList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis-demo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ict.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ict.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ict.mybatis.test.DynamicSQLMapperTest" />
+      <option name="METHOD_NAME" value="testInsertMoreByList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MBGTest.testMBG" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis_MBG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ict.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ict.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ict.mybatis.test.MBGTest" />
+      <option name="METHOD_NAME" value="testMBG" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageHelperTest.testPageHelper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatis_MBG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ict.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ict.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ict.mybatis.test.PageHelperTest" />
+      <option name="METHOD_NAME" value="testPageHelper" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PageHelperTest.testPageHelper" />
+        <item itemvalue="JUnit.MBGTest.testMBG" />
+        <item itemvalue="JUnit.CacheMapperTest.testTwoCache" />
+        <item itemvalue="JUnit.CacheMapperTest.testOneCache" />
+        <item itemvalue="JUnit.DynamicSQLMapperTest.testInsertMoreByList" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cab35f25-1f54-428b-9bb6-ef6cd0ab58ef" name="Default Changelist" comment="" />
+      <created>1657719614530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657719614530</updated>
+      <workItem from="1657719615840" duration="14000" />
+      <workItem from="1657719636637" duration="7129000" />
+      <workItem from="1657804353940" duration="7215000" />
+      <workItem from="1658028819831" duration="8558000" />
+      <workItem from="1658045332995" duration="175000" />
+      <workItem from="1658045522205" duration="266000" />
+      <workItem from="1658045800428" duration="3340000" />
+      <workItem from="1658406863801" duration="439000" />
+    </task>
+    <task id="LOCAL-00001" summary="maven">
+      <created>1657719926568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657719926568</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="maven" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="750" y="209" key="#Project_Structure" timestamp="1658046754893">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="750" y="209" key="#Project_Structure/0.0.1707.1019@0.0.1707.1019" timestamp="1658046754893" />
+    <state x="1085" y="222" width="487" height="652" key="#com.intellij.ide.util.MemberChooser" timestamp="1658046033514">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="1085" y="222" width="487" height="652" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1019@0.0.1707.1019" timestamp="1658046033514" />
+    <state x="1010" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1658045758178">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="1010" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1658045758178" />
+    <state x="332" y="133" key="CommitChangelistDialog2" timestamp="1657719925541">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="332" y="133" key="CommitChangelistDialog2/0.0.1707.1019@0.0.1707.1019" timestamp="1657719925541" />
+    <state width="808" height="142" key="GridCell.Tab.0.bottom" timestamp="1658049988288">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="808" height="142" key="GridCell.Tab.0.bottom/0.0.1707.1019@0.0.1707.1019" timestamp="1658049988288" />
+    <state width="808" height="142" key="GridCell.Tab.0.center" timestamp="1658049988288">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="808" height="142" key="GridCell.Tab.0.center/0.0.1707.1019@0.0.1707.1019" timestamp="1658049988288" />
+    <state width="808" height="142" key="GridCell.Tab.0.left" timestamp="1658049988288">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="808" height="142" key="GridCell.Tab.0.left/0.0.1707.1019@0.0.1707.1019" timestamp="1658049988288" />
+    <state width="808" height="142" key="GridCell.Tab.0.right" timestamp="1658049988288">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="808" height="142" key="GridCell.Tab.0.right/0.0.1707.1019@0.0.1707.1019" timestamp="1658049988288" />
+    <state x="564" y="182" key="SettingsEditor" timestamp="1658037842700">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="564" y="182" key="SettingsEditor/0.0.1707.1019@0.0.1707.1019" timestamp="1658037842700" />
+    <state x="872" y="243" key="Vcs.Push.Dialog.v2" timestamp="1657720066867">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="872" y="243" key="Vcs.Push.Dialog.v2/0.0.1707.1019@0.0.1707.1019" timestamp="1657720066867" />
+    <state x="1076" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1657720045549">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="1076" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1707.1019@0.0.1707.1019" timestamp="1657720045549" />
+    <state x="299" y="169" key="new project wizard" timestamp="1658407274443">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="299" y="169" key="new project wizard/0.0.1707.1019@0.0.1707.1019" timestamp="1658407274443" />
+  </component>
+</project>
