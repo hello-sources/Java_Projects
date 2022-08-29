@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ict.mybatis.mapper.ParameterMapper">
+
+    <!--getAllUser-->
+    <select id="getAllUser" resultType="User">
+        select * from t_user
+    </select>
+
+    <!--getUserByUsername-->
+    <select id="getUserByUsername" resultType="User">
+        select * from t_user where username = '${username}'
+    </select>
+
+    <!--checkLogin-->
+    <select id="checkLogin" resultType="User">
+        <!--select * from t_user where username = #{arg0} and password = #{arg1}-->
+        select * from t_user where username = '${arg0}' and password = '${param2}'
+    </select>
+
+    <!--checkLoginByMap-->
+    <select id="checkLoginByMap" resultType="User">
+        select * from t_user where username = #{username} and password = #{password}
+    </select>
+
+    <!--insertUser，对于实体类，直接按照属性的方式来访问属性值即可-->
+    <insert id="insertUser">
+        insert into t_user values(null, #{username}, #{password}, #{age}, #{sex}, #{email})
+    </insert>
+
+    <!--checkLoginByParam-->
+    <select id="checkLoginByParam" resultType="User">
+        select * from t_user where username = #{param1} and password = #{param2}
+    </select>
+
+</mapper>
